@@ -10337,6 +10337,10 @@ msgstr ""
 msgid "Workflows"
 msgstr ""
 
+#: app/graphql/gql/mutations/login.rb
+msgid "Wrong login or password combination."
+msgstr ""
+
 #: app/assets/javascripts/app/controllers/_profile/notification.coffee
 msgid "Xylo"
 msgstr ""
