@@ -1,7 +1,7 @@
 .template_integration_es: &template_integration_es
   extends:
     - .env_base
-    - .services_mysql_postgresql_elasticsearch
+    - .services_mysql_postgresql_redis_memcached_elasticsearch
     - .variables_es
   stage: test
   tags:
@@ -16,10 +16,10 @@
   <<: *template_integration_es
   variables:
     ELASTICSEARCH_TAG: '7'
-    RAILS_ENV: "test"
+    RAILS_ENV: 'test'
 
 "rspec:es:7.8":
   <<: *template_integration_es
   variables:
     ELASTICSEARCH_TAG: '7.8.1'
-    RAILS_ENV: "test"
+    RAILS_ENV: 'test'
