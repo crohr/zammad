@@ -8979,6 +8979,10 @@ msgstr ""
 msgid "The server settings could not be automatically detected. Please configure them manually."
 msgstr ""
 
+#: app/frontend/apps/mobile/views/Login.vue
+msgid "The session is no longer valid. Please log in again."
+msgstr ""
+
 #: app/assets/javascripts/app/controllers/getting_started/admin.coffee
 msgid "The sign-in failed. Please contact the Support team."
 msgstr ""
