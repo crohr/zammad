@@ -2236,6 +2236,7 @@ msgstr ""
 #: app/assets/javascripts/app/views/popover/ticket.jst.eco
 #: app/assets/javascripts/app/views/profile/token_access.jst.eco
 #: app/assets/javascripts/app/views/widget/ticket_stats_frequency.jst.eco
+#: app/frontend/apps/mobile/components/ticket/TicketList.vue
 #: app/models/report.rb
 msgid "Created"
 msgstr ""
@@ -2343,6 +2344,7 @@ msgstr ""
 #: app/assets/javascripts/app/views/time_accounting/by_ticket.jst.eco
 #: app/assets/javascripts/app/views/time_accounting/index.jst.eco
 #: app/controllers/time_accountings_controller.rb
+#: app/frontend/apps/mobile/components/ticket/TicketList.vue
 #: db/seeds/object_manager_attributes.rb
 #: db/seeds/roles.rb
 #: db/seeds/ticket_article_senders.rb
@@ -6692,6 +6694,7 @@ msgstr ""
 
 #: app/assets/javascripts/app/controllers/_manage/ticket.coffee
 #: app/assets/javascripts/app/views/agent_ticket_view/detail.jst.eco
+#: app/frontend/apps/mobile/components/ticket/TicketList.vue
 msgid "Number"
 msgstr ""
 
@@ -8504,6 +8507,7 @@ msgstr ""
 #: app/assets/javascripts/app/views/integration/idoit_object_result.jst.eco
 #: app/assets/javascripts/app/views/ticket_zoom/sidebar_idoit.jst.eco
 #: app/assets/javascripts/app/views/widget/http_log_show.jst.eco
+#: app/frontend/apps/mobile/components/ticket/TicketList.vue
 msgid "Status"
 msgstr ""
 
@@ -9435,6 +9439,7 @@ msgstr ""
 #: app/assets/javascripts/app/views/maintenance.jst.eco
 #: app/assets/javascripts/app/views/settings/form.jst.eco
 #: app/assets/javascripts/app/views/time_accounting/by_ticket.jst.eco
+#: app/frontend/apps/mobile/components/ticket/TicketList.vue
 #: db/seeds/object_manager_attributes.rb
 #: lib/excel_sheet/ticket.rb
 msgid "Title"
