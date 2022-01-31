@@ -51,12 +51,12 @@ gem 'rszr', '0.5.2'
 # performance - Memcached
 gem 'dalli', require: false
 
+# Vite is required by the web server
+gem 'vite_rails'
+
 # Only load gems for asset compilation if they are needed to avoid
 #   having unneeded runtime dependencies like NodeJS.
 group :assets do
-  # asset handling - frontend tool chain
-  gem 'vite_rails', require: false
-
   # asset handling - javascript execution for e.g. linux
   gem 'execjs', require: false
 

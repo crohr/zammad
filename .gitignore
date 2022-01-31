@@ -102,7 +102,6 @@
 yarn-error.log
 /public/vite
 /public/vite-dev
-/public/vite-test
 /node_modules
 
 # Eslint
