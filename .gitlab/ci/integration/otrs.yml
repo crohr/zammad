@@ -12,10 +12,10 @@
 "minitest:integration:otrs:6":
   <<: *template_integration_otrs
   services:
-    - name: $CI_REGISTRY/docker/zammad-mysql:stable
-      alias: mysql
-    - name: $CI_REGISTRY/docker/zammad-postgresql:stable
-      alias: postgresql
+    - <<: *docker_mysql
+    - <<: *docker_postgresql
+    - <<: *docker_redis
+    - <<: *docker_memcached
     - name: $CI_REGISTRY/docker/zammad-ci-otrsimport-db:otrs6
       alias: zammad-ci-otrsimport-db
     - name: $CI_REGISTRY/docker/zammad-ci-otrsimport-app:otrs6
@@ -24,10 +24,10 @@
 "minitest:integration:otrs:5":
   <<: *template_integration_otrs
   services:
-    - name: $CI_REGISTRY/docker/zammad-mysql:stable
-      alias: mysql
-    - name: $CI_REGISTRY/docker/zammad-postgresql:stable
-      alias: postgresql
+    - <<: *docker_mysql
+    - <<: *docker_postgresql
+    - <<: *docker_redis
+    - <<: *docker_memcached
     - name: $CI_REGISTRY/docker/zammad-ci-otrsimport-db:otrs5
       alias: zammad-ci-otrsimport-db
     - name: $CI_REGISTRY/docker/zammad-ci-otrsimport-app:otrs5
@@ -36,10 +36,10 @@
 "minitest:integration:otrs:4":
   <<: *template_integration_otrs
   services:
-    - name: $CI_REGISTRY/docker/zammad-mysql:stable
-      alias: mysql
-    - name: $CI_REGISTRY/docker/zammad-postgresql:stable
-      alias: postgresql
+    - <<: *docker_mysql
+    - <<: *docker_postgresql
+    - <<: *docker_redis
+    - <<: *docker_memcached
     - name: $CI_REGISTRY/docker/zammad-ci-otrsimport-db:otrs4
       alias: zammad-ci-otrsimport-db
     - name: $CI_REGISTRY/docker/zammad-ci-otrsimport-app:otrs4
@@ -48,10 +48,10 @@
 "minitest:integration:otrs:33":
   <<: *template_integration_otrs
   services:
-    - name: $CI_REGISTRY/docker/zammad-mysql:stable
-      alias: mysql
-    - name: $CI_REGISTRY/docker/zammad-postgresql:stable
-      alias: postgresql
+    - <<: *docker_mysql
+    - <<: *docker_postgresql
+    - <<: *docker_redis
+    - <<: *docker_memcached
     - name: $CI_REGISTRY/docker/zammad-ci-otrsimport-db:otrs33
       alias: zammad-ci-otrsimport-db
     - name: $CI_REGISTRY/docker/zammad-ci-otrsimport-app:otrs33
@@ -60,10 +60,10 @@
 "minitest:integration:otrs:32":
   <<: *template_integration_otrs
   services:
-    - name: $CI_REGISTRY/docker/zammad-mysql:stable
-      alias: mysql
-    - name: $CI_REGISTRY/docker/zammad-postgresql:stable
-      alias: postgresql
+    - <<: *docker_mysql
+    - <<: *docker_postgresql
+    - <<: *docker_redis
+    - <<: *docker_memcached
     - name: $CI_REGISTRY/docker/zammad-ci-otrsimport-db:otrs32
       alias: zammad-ci-otrsimport-db
     - name: $CI_REGISTRY/docker/zammad-ci-otrsimport-app:otrs32
@@ -72,10 +72,10 @@
 "minitest:integration:otrs:31":
   <<: *template_integration_otrs
   services:
-    - name: $CI_REGISTRY/docker/zammad-mysql:stable
-      alias: mysql
-    - name: $CI_REGISTRY/docker/zammad-postgresql:stable
-      alias: postgresql
+    - <<: *docker_mysql
+    - <<: *docker_postgresql
+    - <<: *docker_redis
+    - <<: *docker_memcached
     - name: $CI_REGISTRY/docker/zammad-ci-otrsimport-db:otrs31
       alias: zammad-ci-otrsimport-db
     - name: $CI_REGISTRY/docker/zammad-ci-otrsimport-app:otrs31
