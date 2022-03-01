@@ -28,6 +28,7 @@ if git remote | grep github > /dev/null; then
   git remote rm github
 fi
 git remote add github $GITHUB_DEST
+git fetch github
 
 if [ "$CI_BUILD_REF_NAME" != "$CI_BUILD_TAG" ]; then
   git push github $CI_BUILD_REF_NAME
