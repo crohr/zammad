@@ -12,6 +12,3 @@ rm -r tmp/cache
 
 # delete node_modules folder - only required for building
 rm -r node_modules
-
-# cleanup
-script/build/cleanup.sh

@@ -8,3 +8,6 @@ uname -a
 ruby -v
 env
 cat Gemfile.lock
+
+# cleanup
+script/build/cleanup.sh
