@@ -21,7 +21,7 @@ fi
 
 git checkout $CI_BUILD_REF_NAME
 if [ "$CI_BUILD_REF_NAME" != "$CI_BUILD_TAG" ]; then
-  git reset --hard origin/$CI_BUILD_REF_NAME
+  git pull --rebase origin $CI_BUILD_REF_NAME
 fi
 
 if git remote | grep github > /dev/null; then
